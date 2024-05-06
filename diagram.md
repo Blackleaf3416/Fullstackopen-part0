@@ -8,6 +8,8 @@ User->>Browser: click on "save"
 Browser->>Server: Send the form to https://studies.cs.helsinki.fi/exampleapp/new_note
 Server-->>Browser: answer Status Code 302
 Browser->>Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
-  
+Browser->>Server: request main.css
+Browser->>Server: request main.js
+Browser->>Server: request data.json
   
 ```
