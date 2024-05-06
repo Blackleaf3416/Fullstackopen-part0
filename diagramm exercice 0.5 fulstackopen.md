@@ -10,6 +10,9 @@ User->>Browser: click on "save"
 
 Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 Note right of Browser: The post request includes the new note and the date
+Activate Server
+Server-->>Browser: 201 Created
+Deactivate Server
 Browser-->Browser: execute js code from the server
 Browser-->Browser: Store the note and save an event
 Browser-->Browser: Call function "preventdefault" to stop default behavior to not send a GET
