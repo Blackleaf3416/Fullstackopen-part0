@@ -7,7 +7,7 @@ User->>Browser: write a word in the form
 User->>Browser: click on "save"
 Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
 activate Server
-Server-->>Browser: Status Code 302 Found
+Server-->>Browser: Status Code 302 Found redirect browser to GET https://studies.cs.helsinki.fi/exampleapp/notes
 Deactivate Server
 Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
 Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
