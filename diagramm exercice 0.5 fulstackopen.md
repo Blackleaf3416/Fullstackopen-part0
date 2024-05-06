@@ -1,0 +1,21 @@
+```mermaid
+sequenceDiagram
+
+actor User
+participant Browser
+participant Server
+Browser->>Server: 
+User->>Browser: write a word in the form
+User->>Browser: click on "save"
+
+Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Note right of Browser: The post request includes the new note and the date
+Browser-->Browser: execute js code from the server
+Browser-->Browser: Store the note and save an event
+Browser-->Browser: Call function "preventdefault" to stop default behavior to not send a GET
+Browser-->Browser: Event manager create a new note
+Browser-->Browser: add it to the note list
+Browser-->Browser: refresh the note list
+Browser-->>Server: POST New note
+Note right of Browser: The data is sent as JSON string.
+```
