@@ -4,9 +4,7 @@ sequenceDiagram
 actor User
 participant Browser
 participant Server
-Browser->>Server: 
-User->>Browser: write a word in the form
-User->>Browser: click on "save"
+User->>Browser: write a word in the form and click on "save"
 
 Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 Note right of Browser: The post request includes the new note and the date
