@@ -3,9 +3,9 @@ sequenceDiagram
 actor user
 participant Browser
 participant Server
-user-->browser
+user->>browser
 write a word
-user-->browser
+user->>browser
 click on "save"
   
   
