@@ -11,7 +11,7 @@ Note right of Browser: The post request includes the new note and the date
 Activate Server
 Server-->>Browser: 201 Created
 Deactivate Server
-Browser-->Browser: execute js code from the server
+Browser-->Browser: execute js code
 Browser-->Browser: Store the note and save an event
 Browser-->Browser: Call function "preventdefault" to stop default behavior to not send a GET
 Browser-->Browser: Event manager create a new note
