@@ -10,6 +10,7 @@ Server-->>Browser: answer Status Code 302
 Browser->>Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 Browser->>Server: request main.css
 Browser->>Server: request main.js
+Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 Browser->>Server: request data.json
   
 ```
