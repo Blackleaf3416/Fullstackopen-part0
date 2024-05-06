@@ -1,11 +1,11 @@
 ```mermaid
 sequenceDiagram
-actor user
+actor User
 participant Browser
 participant Server
-user->>browser
+User->>Browser
 write a word
-user->>browser
+User->>Browser
 click on "save"
   
   
